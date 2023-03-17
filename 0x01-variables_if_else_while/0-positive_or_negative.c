@@ -3,13 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - Determine if a number is postive, zero or negetive.
+ * main - Determine if a number is positive, zero or nehetive.
  *
  * Return: 0 (Success)
  */
 int main(void)
 {
 	int n;
+
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -22,7 +23,8 @@ int main(void)
 		printf("%d is zero\n", n);
 	}
 	else
-	{ printf("%d is negetive\n", n);
+	{
+		printf("%d is negetive\n", n);
 	}
 	return (0);
 }
