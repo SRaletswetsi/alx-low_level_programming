@@ -1,7 +1,7 @@
 #include "function_pointers.h"
 
 /**
- * int_index - function that searches for an integer, else -1
+ * int_index - return index place in comparison = true, else -1
  * @array: array
  * @size: size of elements in array
  * @cmp: pointer to the function of one of 3 main
@@ -18,5 +18,5 @@ int int_index(int *array, int size, int (*cmp)(int))
 		if (cmp(array[i]))
 			return (i);
 	}
-	return (-1)
+	return (-1);
 }
