@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main -  prints the opcodes of its own
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < bytes; i++)
 	{
-		iif (i == bytes - 1)
+		if (i == bytes - 1)
 		{
 			printf("%02hhx\n", arr[i]);
 			break;
