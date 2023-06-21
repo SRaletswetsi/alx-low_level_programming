@@ -5,12 +5,12 @@
 
 /**
  * main - a program that performs simple operations
- * @argc: number of arguments provided to the program.
+ * @argc: number of arguments
  * @argv: An array of pointers
  *
- * Return: Always 0.
+ * Return: Always 0
  */
-int main(in __attribute__((__usused__)) argc, char *argv[])
+int main(int __attribute__((__unused__)) argc, char *argv[])
 {
 	int num1, num2;
 	char *op;
@@ -37,6 +37,7 @@ int main(in __attribute__((__usused__)) argc, char *argv[])
 		printf("Error\n");
 		exit(100);
 	}
+
 	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
